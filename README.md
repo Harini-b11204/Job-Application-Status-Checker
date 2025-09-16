@@ -16,13 +16,13 @@ A simple web app to submit job applications and track their statuses — built w
 
 # 💻 Tech Stack
 
-HTML5 for structure
+📄HTML5 for structure
 
-CSS3 for styling (styles.css)
+📔CSS3 for styling (styles.css)
 
-Vanilla JavaScript (app.js) for client-side logic
+⚒️Vanilla JavaScript (app.js) for client-side logic
 
-No database or backend — everything runs locally
+🫙No database or backend — everything runs locally
 
 # ⚙️ Getting Started
 
@@ -36,7 +36,7 @@ cd job-application-status-checker
 Just open the index.html file in your browser.
 (No server setup required.)
 
-#📂 Project Structure
+# 📂 Project Structure
 ```
 job-application-status-checker/
 ├──node_modules/
