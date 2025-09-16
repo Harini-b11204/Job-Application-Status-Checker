@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Job Application Status Checker</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body >
+    <header>
+      <h1>Job Application Status Checker</h1>
+      <p class="lead">Submit your application and check final statuses.</p>
+    </header>
+    <br>
+    <main>
+      <section class="card">
+        <h2>Submit Application</h2>
+        <form id="appForm">
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Full name" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="you@company.com" required />
+          </div>
+          <div class="controls">
+            <button type="submit" class="btn primary">Submit</button>
+            <span id="message" role="status" aria-live="polite"></span>
+          </div>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>Applications</h2>
+        <div class="controls">
+          <button id="refresh" class="btn">Refresh List</button>
+          <button id="check" class="btn">Check All Statuses</button>
+        </div>
+        <ul id="list" class="app-list"></ul>
+      </section>
+    </main>
+
+    <footer>
+      <small>Demo — in-memory storage only. Server resets clear applications.</small>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

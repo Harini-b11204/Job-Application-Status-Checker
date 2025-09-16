@@ -1,0 +1,49 @@
+:root{
+  --bg: #f6f9fb;
+  --card: #ffffff;
+  --accent: #0b6efd;
+  --muted: #6b7280;
+  --success: #16a34a;
+  --danger: #dc2626;
+  --radius: 8px;
+  --max-width: 900px;
+}
+*{box-sizing: border-box}
+body{
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background: linear-gradient(180deg,var(--bg),#eef4fb);
+  margin:0; padding:2rem; color:#111;
+  display:flex; justify-content:center;
+}
+.container{max-width:var(--max-width); width:100%}
+main{width:100%; max-width:var(--max-width)}
+header{margin-bottom:1rem; text-align:center; display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:160px; width:100%; background: linear-gradient(90deg, rgba(11,110,253,0.12), rgba(11,110,253,0.04)); border-radius:12px; padding:1.25rem}
+.lead{color:var(--muted); margin-top:0.25rem}
+h1{font-size:1.9rem; letter-spacing:0.2px}
+@media (min-width:700px){
+  header{min-height:200px}
+  h1{font-size:2.4rem}
+}
+.card{background:var(--card); border-radius:var(--radius); padding:1rem 1.25rem; box-shadow:0 6px 18px rgba(11,110,253,0.06); margin-bottom:1rem}
+h1{margin:0 0 .25rem}
+h2{margin:0 0.5rem}
+.field{margin-bottom:.75rem}
+label{display:block; font-weight:600; margin-bottom:0.25rem}
+input[type="text"], input[type="email"]{width:100%; padding:.6rem; border:1px solid #e6e9ee; border-radius:6px; font-size:1rem}
+.controls{display:flex; gap:.5rem; align-items:center; margin-top:.5rem}
+.btn{background:#fff; border:1px solid #d1d5db; padding:.5rem .75rem; border-radius:6px; cursor:pointer}
+.btn.primary{background:var(--accent); color:#fff; border-color:transparent}
+.btn:active{transform:translateY(1px)}
+#message{margin-left:.5rem; color:var(--danger)}
+.app-list{list-style:none; padding-left:0; margin-top:1rem}
+.app-list li{padding:.5rem; border-radius:6px; border:1px solid #eef2ff; display:flex; justify-content:space-between; align-items:center; margin-bottom:.5rem}
+.status{font-weight:600}
+.status.Selected{color:var(--success)}
+.status.Rejected{color:var(--danger)}
+.status.Reviewed{color:#d97706}
+footer{margin-top:1rem; text-align:center; color:var(--muted)}
+
+@media (min-width:700px){
+  body{padding:3rem}
+  .card{padding:1.25rem}
+}
